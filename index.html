@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <script src="script/code.js" defer></script>
+    <title>MyTechnics - კომპიუტერული ტექნიკა</title>
+</head>
+<body>
+    <div class="blue-header dinline">
+        <!-- responsive menu <header></header> -->
+        <p class="responsive-logo dinline">MyTechnics</p>
+        <i class="fas fa-sign-in-alt login-ic"></i>
+        <i class="fas fa-shopping-cart cart-ic"></i>
+        <!-- resp menu end -->
+        <div class="phone dinline">
+            <p class="head-phone dinline">+995 574116998</p>
+        </div>
+        <div class="social">
+            <ion-icon class="ig" name="logo-instagram"></ion-icon>
+            <ion-icon class="fb" name="logo-facebook"></ion-icon>
+            <ion-icon class="yt" name="logo-youtube"></ion-icon>
+        </div>
+    </div>
+    <section id="head-2">
+        <div class="logo dinline">
+            <p class="logo-txt" onclick="location.href='index.html'">MyTechnics</p>
+        </div>
+        <div class="search-bar dinline">
+            <input class="searchbar" placeholder="საძიებო სიტყვა">
+        </div>
+
+        <!-- <log-in></log-in> -->
+        <div class="sign dinline">
+            <p class="log-form dinline mestvira">ავტორიზაცია / რეგისტრაცია</p>
+            <div class="cart-onclick dinline">
+                <p class="cart-txt dinline mestvira" id="myCart" onclick="myFunction()">კალათა</p>
+                <div class="clickmenu-cart" id="myDIV">
+                    <ion-icon class="close" id="icClose" onclick="myFunctn()" name="close-outline"></ion-icon>
+                    <div class="cart-empty">
+                        <p class="cart-isempty mestvira" id="idNika" onclick="myCart()">კალათა ცარიელია</p>
+                    </div>
+                </div>
+            </div>
+            <p class="shedareba dinline">შედარება</p>
+        </div>
+    </section>
+    <div class="black-line"></div>
+    <br>
+    <div class="navigation-bar dinline">
+        <button type="button" class="categories dinline"><ion-icon class="cat-icon dinline" name="menu-outline"></ion-icon><span></span>კატეგორიები</button>
+        <button onclick="myComp()" type="button" class="c-button"><ion-icon name="desktop-outline"></ion-icon> PC კომპიუტერები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div id="idComp" class="dropdown-pc dinline">
+            <button class="drp-button1" type="button">სარენდერო</button>
+            <button class="drp-button1" type="button">სათამაშო</button>
+            <button class="drp-button1" type="button">საოფისე</button>
+        </div>
+        <div class="blackline"></div>
+        <button onclick="myCompparts()" type="button" class="c-button"><i class="fas fa-microchip"></i>  კომპიუტერის ნაწილები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div id="idCompparts" class="dropdown-pc dinline">
+            <button class="drp-button1" type="button">დედაბარათები</button>
+            <button class="drp-button1" type="button">დისკის წამკითხველი</button>
+            <button class="drp-button1" type="button">ვიდეობარათები</button>
+            <button class="drp-button1" type="button">ვიდეობარათის ქულერები</button>
+            <button class="drp-button1" type="button">ვინჩესტერი HDD</button>
+            <button class="drp-button1" type="button">ვინჩესტერი SSD</button>
+            <button class="drp-button1" type="button">ვინჩესტერი M2</button>
+            <button class="drp-button1" type="button">კვების ბლოკები</button>
+            <button class="drp-button1" type="button">პროცესორები</button>
+            <button class="drp-button1" type="button">ქეისები</button>
+            <button class="drp-button1" type="button">ქსელის ბარათები</button>
+            <button class="drp-button1" type="button">ქულერები</button>
+            <button class="drp-button1" type="button">ხმის ბარათები</button>
+        </div>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="far fa-keyboard"></i>  კომპიუტერის აქსესუარები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-tv"></i>  მონიტორები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-laptop"></i>  ნოუთბუქები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-memory"></i>  ნოუთბუქის ნაწილები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-table"></i>  Gaming ინვენტარი <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-headset"></i>  პერიფერიალები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-mobile-alt"></i>  მობილურები - პლანშეტები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-network-wired"></i>  ქსელის აპარატურა <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-battery-half"></i>  ელ-ენერგიის წყაროები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-fingerprint"></i>  უსაფრთხოების სისტემები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fab fa-xbox"></i>  კონსოლები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-code"></i>  პროგრამები <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        <div class="blackline"></div>
+        <button type="button" class="c-button"><i class="fas fa-ellipsis-h"></i>  სხვადასხვა</button>
+    </div>
+
+    <!-- button category content -->
+    <!-- <div id="idComp" class="pcs dinline ">
+        <i onclick="compIc()" class="fas fa-window-close pcs-close"></i>
+        <button class="button-pcs nika1" type="button">საოფისე</button>
+        <button class="button-pcs" type="button">სათამაშო</button>
+        <button class="button-pcs" type="button">სარენდერო</button>
+    </div> -->
+    <div onclick="myBack()" class="background dinline">
+    </div>
+    <div class="nav-button">
+        <button class="bn1 best-seller" type="button">ფასდაკლებული</button>
+        <button class="bn1 new" type="button">ახალი დამატებული</button>
+        <button class="bn1 service" type="button">სერვისი</button>
+        <button class="bn1 configurator" type="button">კონფიგურატორი</button>
+    </div>
+    <!-- responsive content -->
+    <div class="responsive-menu dinline">
+        <i class="fas fa-bars resp-ic"></i>
+    </div>
+</body>
+</html>

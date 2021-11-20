@@ -1,0 +1,68 @@
+@media only screen and (max-width: 700px) {
+    .search-bar {
+        display: none;  
+    }
+
+    .sign {
+        display: none;
+    }
+
+    .logo-txt {
+        display: none;
+    }
+
+    .resp-menu {
+        display: none;
+        font-size: 25px;
+        float: right;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .responsive-logo {
+        display: block;
+        color: white;
+        font-family: 'bpgnino';
+        cursor: pointer;
+        float: left;
+        font-size: 30px;
+        margin-top: 7px;
+    }
+
+    .resp-ic {
+        display: block;
+        float: right;
+        color: black;
+        font-size: 24px;
+        margin-top: 8px;
+        margin-right: 5px;
+    }
+
+    .login-ic {
+        display: block;
+        float: right;
+        color: white;
+        font-size: 24px;
+        margin-top: 8px;
+        margin-right: 6px;
+    } 
+
+    .cart-ic {
+        display: block;
+        float: right;
+        color: white;
+        font-size: 24px;
+        margin-top: 8px;
+        margin-right: 6px;
+    }
+}
